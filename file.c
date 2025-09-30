@@ -53,7 +53,7 @@ void main()
               score+=0;
          }
          printf("Question 3 What is your Anual Income ? \n");
-          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 5 lacs\n");
+          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 15 lacs\n");
            scanf("%d",&choice);
             if(choice==1)
          {
@@ -124,7 +124,7 @@ void main()
               score+=0;
          }
          printf("Question 3 What is your Anual Income ? \n");
-          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 5 lacs\n");
+          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 15 lacs\n");
            scanf("%d",&choice);
             if(choice==1)
          {
@@ -194,7 +194,7 @@ void main()
               score+=0;
          }
          printf("Question 3 What is your Anual Income ? \n");
-          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 5 lacs\n");
+          printf(" 1. less than 8Lac \t 2.8 to 15 Lacs \t 3.more Than 15 lacs\n");
            scanf("%d",&choice);
             if(choice==1)
          {
