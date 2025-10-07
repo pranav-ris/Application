@@ -1,4 +1,4 @@
-//Adoption Application Form 
+//Adoption Application Form
 #include<stdio.h>
 #include <stdlib.h>
 void main()
@@ -18,7 +18,7 @@ void main()
     printf("\n__________________________________________________________________________________________________________________\n");
     scanf("%d",&cat);
     printf("Please answer the questions given below :");
-    switch (cat) 
+    switch (cat)
     {
     case 1:
          printf("\n You can adopt any gender\n");
@@ -69,7 +69,7 @@ void main()
          }
           //  printf(" 1. \t 2. \t 3.\n");
          printf("Question 4 Medical Fitness  \n");
-          printf(" 1. Both Parents are physically fit \t 2. one parent is physically ables  \n");
+          printf(" 1. Both Parents are physically fit \t 2. one parent is physically abled  \n");
            scanf("%d",&choice);
             if(choice==1)
          {
@@ -78,7 +78,7 @@ void main()
          if(choice==2)
          {
              printf("\033[0;31mUnfit for adoption\033[0m");
-              exit(EXIT_SUCCESS); 
+              exit(EXIT_SUCCESS);
          }
          printf("\n__________________________________________________________________________________________________________________\n\n\n\n");
          if(score>35)
@@ -89,7 +89,7 @@ void main()
          printf("You are in the waiting list for verification");
          if(score<25)
           printf("\033[0;31mUnfit for adoption\033[0m");
-        
+       
         break;
     case 2:
         printf("\n You can adopt only a boy\n");
@@ -149,7 +149,7 @@ void main()
          if(choice==2)
          {
              printf("\033[0;31mUnfit for adoption\033[0m");
-              exit(EXIT_SUCCESS); 
+              exit(EXIT_SUCCESS);
          }
          printf("\n__________________________________________________________________________________________________________________\n\n\n\n\n");
           if(score>35)
@@ -218,7 +218,7 @@ void main()
          if(choice==2)
          {
             printf("\033[0;31mUnfit for adoption\033[0m");
-              exit(EXIT_SUCCESS); 
+              exit(EXIT_SUCCESS);
          }
          printf("\n__________________________________________________________________________________________________________________\n\n\n\n\n");
           if(score>35)
@@ -234,7 +234,7 @@ void main()
     printf("\n\n\n\n__________________________________________________________________________________________________________________\n");
         printf("\033[0;31m Wrong Choice , Please enter valid answer\033[0m");
         break;
-    
+   
 }
 printf("\n\n\n\n__________________________________________________________________________________________________________________\n");
 }
