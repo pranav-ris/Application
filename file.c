@@ -3,26 +3,25 @@
 #include <stdlib.h>
 void main()
 {
-    printf("\n\n\n\n");
-    printf("\n__________________________________________________________________________________________________________________\n\n\n\n");
+    printf("\n_________________________________________________________________\n\n");
     int choice, score=0, cat;
-    char name[100], nam[50];
+    char name[100];
     printf("        Welcome to Adoption Application form ! \n ");
     printf("      Please Enter '1' , '2', '3', according to questions asked \n");
-    printf("\033[0;31m**Please note all details will be verified by our team **\033[0m \n");
-    printf("\n__________________________________________________________________________________________________________________\n");
+    printf("**Please note all details will be verified by our team ** \n");
+    printf("\n____________________________________________________________________\n");
     printf("\nPlease Enter Your name : \t");
-    scanf("%s %s",name,nam);
-    printf("\n Which category do you perfect fit in ? \n");
+    scanf("%[^\n]%",name);
+    printf("\n Which category do you perfectly fit in ? \n");
     printf(" 1.Married couple \t 2.Single Male \t 3.Single Female\n");
-    printf("\n__________________________________________________________________________________________________________________\n");
-    scanf("%d",&cat);
+     scanf("%d",&cat);
+    printf("\n__________________________________________________________________\n");
     printf("Please answer the questions given below :");
     switch (cat)
     {
     case 1:
          printf("\n You can adopt any gender\n");
-         printf("Question 1 Please descibe your house ? \n");
+         printf("Question 1 Please describe your house  \n");
          printf(" : 1.1BHK \t 2.2BHK \t 3.More than 2BHK\n");
          scanf("%d",&choice);
          if(choice==1)
@@ -77,23 +76,25 @@ void main()
          }
          if(choice==2)
          {
-             printf("\033[0;31mUnfit for adoption\033[0m");
+             printf("Unfit for adoption");
               exit(EXIT_SUCCESS);
          }
-         printf("\n__________________________________________________________________________________________________________________\n\n\n\n");
+         printf("\n_________________________________________________________________\n\n");
+         printf("Name : %s",name);
+         printf("Category ; Married couple \n");
          if(score>35)
          printf("You are at First priority ");
          if(score>30&&score<=35)
          printf(" You are at second priority");
-         if(score<30&&score>=25)
+         if(score<=30&&score>=25)
          printf("You are in the waiting list for verification");
          if(score<25)
-          printf("\033[0;31mUnfit for adoption\033[0m");
+          printf("Unfit for adoption");
        
         break;
     case 2:
         printf("\n You can adopt only a boy\n");
-        printf("Question 1 Descibe your house ? \n");
+        printf("Question 1 Describe your house  \n");
          printf(" 1.1BHK \t 2.2BHK \t 3.More than 2BHK\n");
          scanf("%d",&choice);
          if(choice==1)
@@ -148,18 +149,20 @@ void main()
          }
          if(choice==2)
          {
-             printf("\033[0;31mUnfit for adoption\033[0m");
+             printf("Unfit for adoption");
               exit(EXIT_SUCCESS);
          }
-         printf("\n__________________________________________________________________________________________________________________\n\n\n\n\n");
+         printf("\n__________________________________________________________________\n\n");
+          printf("Name : %s \n",name);
+         printf("Category ; Single Male\n");
           if(score>35)
          printf("You are at First priority ");
          if(score>30&&score<=35)
          printf(" You are at second priority");
-         if(score<30&&score>=25)
+         if(score<=30&&score>=25)
          printf("You are in the waiting list for verification");
          if(score<25)
-          printf("\033[0;31mUnfit for adoption\033[0m");
+          printf("Unfit for adoption");
           break;
     case 3:
       printf("\n You can adopt any gender\n");
@@ -217,24 +220,27 @@ void main()
          }
          if(choice==2)
          {
-            printf("\033[0;31mUnfit for adoption\033[0m");
+            printf("Unfit for adoption");
               exit(EXIT_SUCCESS);
          }
-         printf("\n__________________________________________________________________________________________________________________\n\n\n\n\n");
+         printf("\n______________________________________________________________________\n\n");
+          printf("Name : %s \n",name);
+         printf("Category : Single Female\n ");
           if(score>35)
          printf("You are at First priority ");
          if(score>30&&score<=35)
          printf(" You are at second priority");
-         if(score<30&&score>=25)
+         if(score<=30&&score>=25)
          printf("You are in the waiting list for verification");
          if(score<25)
-          printf("\033[0;31mUnfit for adoption\033[0m");
+          printf("Unfit for adoption");
           break;
     default:
-    printf("\n\n\n\n__________________________________________________________________________________________________________________\n");
-        printf("\033[0;31m Wrong Choice , Please enter valid answer\033[0m");
+    printf("\n\n____________________________________________________________________\n");
+        printf(" Wrong Choice , Please enter valid answer");
         break;
    
 }
-printf("\n\n\n\n__________________________________________________________________________________________________________________\n");
+printf("\n\n____________________________________________________________________\n");
 }
+
